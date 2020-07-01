@@ -1,16 +1,33 @@
-input {
 
+
+.container {
+    text-align: center;
+    vertical-align: center;
+
+}
+
+.calculator {
+
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: solid 2px black;
+    width: 330px;
+    height: 200px;
+    padding-top: 71px;
+    padding-bottom: 162px;
+}
+
+input{
+    height: 30px;
+    margin-bottom: 20px;
 }
 
 button {
     width: 55px;
     height: 30px;
-    margin: 5px;
+    margin: 10px;
     font-size: 20px;
     font-weight: bold;
 }
 
-.container {
-    text-align: center;
-    vertical-align: center;
-}

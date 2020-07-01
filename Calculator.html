@@ -4,57 +4,66 @@
     <meta charset="UTF-8">
     <title>Javascript Calculator</title>
     <link rel="stylesheet" href="calculator.css">
+    <script src="Calculator.js"></script>
 
 </head>
 <body>
-<main class="container">
-<div class="row">
-<input id="left-operand" type="text" style="width: 92px">
-<input id="operator" type="text" style="width: 50px">
-<input id="right-operand" type="text" style="width: 92px">
-</div>
+    <main class="container">
+        <div class="calculator">
+            <div class="display-screen">
+                <input type="text" name="display" id="left-display" style="width: 100px; height: 50px">
+                <input type="text" name="display" id="mid-display" style="width: 60px; height: 50px">
+                <input type="text" name="display" id="right-display" style="width: 100px; height: 50px">
+            </div>
 
-<div class="row">
-<button class="number" type="button">1</button>
-<button class="number" type="button">2</button>
-<button class="number" type="button">3</button>
-<button class="oper" id="plus" type="button">+</button>
-</div>
+            <div class="keys">
+<!--                <div class="row">-->
+                 <button class="number" type="button">1</button>
+                 <button class="number" type="button">2</button>
+                 <button class="number" type="button">3</button>
+                 <button class="operator-btn" id="plus" type="button">+</button>
+<!--                </div>-->
+                <br>
+<!--                <div class="row">-->
+                    <button class="number" type="button">4</button>
+                    <button class="number" type="button">5</button>
+                    <button class="number" type="button">6</button>
+                    <button class="operator-btn" id="minus" type="button">-</button>
+<!--                </div>-->
+                <br>
+<!--                <div class="row">-->
+                 <button class="number" type="button">7</button>
+                 <button class="number" type="button">8</button>
+                 <button class="number" type="button">9</button>
+                 <button class="operator-btn" id="times" type="button">*</button>
+<!--                </div>-->
+                <br>
+<!--                <div class="row">-->
+                    <button type="button">C</button>
+                    <button type="button">0</button>
+                    <button type="button">=</button>
+                    <button class="operator-btn" id="slash" type="button">/</button>
+<!--                </div>-->
+            </div>
+        </div>
+    </main>
 
-<div class="row">
-<button class="number" type="button">4</button>
-<button class="number" type="button">5</button>
-<button class="number" type="button">6</button>
-<button class="oper" id="minus" type="button">-</button>
-</div>
 
-<div class="row">
-<button class="number" type="button">7</button>
-<button class="number" type="button">8</button>
-<button class="number" type="button">9</button>
-<button class="oper" id="times" type="button">*</button>
-</div>
-
-<div class="row">
-<button type="button">C</button>
-<button type="button">0</button>
-<button type="button">=</button>
-<button class="oper" id="slash" type="button">/</button>
-</div>
-
-</main>
-
-<script src="Calculator.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
     "use strict";
 
-    // click event left operand
-    // operator
-    // right operand
-    // click event listeners on buttons
+    $(document).ready(function(e) {
+
+        // click event left operand
+        // operator
+        // right operand
+        // click event listeners on buttons
 
 
+
+    });
 
 
 </script>
