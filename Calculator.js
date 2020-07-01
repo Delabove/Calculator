@@ -1,64 +1,58 @@
-function add() {
 
-}
-
-function subtract() {
-
-}
-
-
-function multiply(){
-
-}
-
-
-
+let allScreens = document.getElementById("display-screen");
 let num1 = document.getElementById("left-display").value;
 let op = document.getElementById("mid-display").value;
 let num2 = document.getElementById("right-display").value;
 
 
 
-function calculate(){
+function calculate(value){
 
-    if (secondValue == 0)
-        {
-            num2.value="division by zero!"
+    if(value === "=") {
+        let all = allScreens.value.split(" ");
+        num1 = parseFloat(all[0]);
+        op = all[1];
+        num2 = parseFloat(all[2]);
+
+
+        if (num2 == 0) {
+            num2.value = "division by zero!"
         }
-        switch(op)
-        {
+        switch (op) {
 
             case '+':
-               result = num1 + num2;
-                num2.value= result;
+                let result = num1 + num2;
+                num2.value = result;
                 break;
+
             case '-':
-                result = num1 - num2;
-                num2.value= result;
+               result = num1 - num2;
+                num2.value = result;
                 break;
+
             case '*':
                 result = num1 * num2;
-                num2.value= result;
+                num2.value = result;
                 break;
+
             case '/':
                 result = num1 / num2;
-                num2.value= result;
-
+                num2.value = result;
                 break;
+
             case '%':
                 result = num1 % num2;
-                num2.value= result;
+                num2.value = result;
                 break;
+
             default:
 
                 break;
         }
 
-
-
-
-
-
+    } else {
+        return;
+    }
 
 }
 
