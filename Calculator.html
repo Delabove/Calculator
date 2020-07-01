@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Javascript Calculator</title>
     <link rel="stylesheet" href="calculator.css">
-    <script src="Calculator.js"></script>
+
 
 </head>
 <body>
     <main class="container">
         <div class="calculator">
-            <div class="display-screen">
+            <div id="display-screen">
                 <input type="text" name="display" id="left-display" style="width: 100px; height: 50px">
                 <input type="text" name="display" id="mid-display" style="width: 60px; height: 50px">
                 <input type="text" name="display" id="right-display" style="width: 100px; height: 50px">
@@ -18,23 +18,23 @@
 
             <div class="keys">
 <!--                <div class="row">-->
-                 <button class="number" type="button">1</button>
-                 <button class="number" type="button">2</button>
-                 <button class="number" type="button">3</button>
+                 <button class="number" type="button" onclick="calculate(1)">1</button>
+                 <button class="number" type="button" onclick="calculate(2)">2</button>
+                 <button class="number" type="button" onclick="calculate(3)">3</button>
                  <button class="operator-btn" id="plus" type="button">+</button>
 <!--                </div>-->
                 <br>
 <!--                <div class="row">-->
-                    <button class="number" type="button">4</button>
-                    <button class="number" type="button">5</button>
-                    <button class="number" type="button">6</button>
+                    <button class="number" type="button" onclick="calculate(4)">4</button>
+                    <button class="number" type="button" onclick="calculate(5)">5</button>
+                    <button class="number" type="button" onclick="calculate(6)">6</button>
                     <button class="operator-btn" id="minus" type="button">-</button>
 <!--                </div>-->
                 <br>
 <!--                <div class="row">-->
-                 <button class="number" type="button">7</button>
-                 <button class="number" type="button">8</button>
-                 <button class="number" type="button">9</button>
+                 <button class="number" type="button" onclick="calculate(7)">7</button>
+                 <button class="number" type="button" onclick="calculate(8)">8</button>
+                 <button class="number" type="button" onclick="calculate(9)">9</button>
                  <button class="operator-btn" id="times" type="button">*</button>
 <!--                </div>-->
                 <br>
@@ -47,7 +47,7 @@
             </div>
         </div>
     </main>
-
+    <script src="Calculator.js"></script>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
