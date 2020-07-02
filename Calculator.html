@@ -11,39 +11,39 @@
     <main class="container">
         <div class="calculator">
             <div id="display-screen">
-                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="left-display" style="width: 100px; height: 50px">
-                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="mid-display" style="width: 60px; height: 50px">
-                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="right-display" style="width: 100px; height: 50px">
+                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="left-display" style="width: 260px; height: 50px; text-align: right">
+<!--                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="mid-display" style="width: 60px; height: 50px">-->
+<!--                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="right-display" style="width: 100px; height: 50px">-->
             </div>
 
             <div class="keys">
-<!--                <div class="row">-->
-                 <button id="1" value="1" class="number" type="button" onclick="calculate(1)">1</button>
-                 <button id="2" value="2" class="number" type="button" onclick="calculate(2)">2</button>
-                 <button id="3" value="3" class="number" type="button" onclick="calculate(3)">3</button>
+
+                 <button id="1" value="1" class="number" type="button" onclick="addNumber(1)">1</button>
+                 <button id="2" value="2" class="number" type="button" onclick="addNumber(2)">2</button>
+                 <button id="3" value="3" class="number" type="button" onclick="addNumber(3)">3</button>
                  <button id="add" value="+" class="operator-btn" onclick="calculate('+')">+</button>
-<!--                </div>-->
+
                 <br>
-<!--                <div class="row">-->
-                    <button id="4" value="4" class="number" type="button" onclick="calculate(4)">4</button>
-                    <button id="5" value="5" class="number" type="button" onclick="calculate(5)">5</button>
-                    <button id="6" value="6" class="number" type="button" onclick="calculate(6)">6</button>
+
+                    <button id="4" value="4" class="number" type="button" onclick="addNumber(4)">4</button>
+                    <button id="5" value="5" class="number" type="button" onclick="addNumber(5)">5</button>
+                    <button id="6" value="6" class="number" type="button" onclick="addNumber(6)">6</button>
                     <button id="subtract" value="-" class="operator-btn" id="minus" onclick="calculate('-')">-</button>
-<!--                </div>-->
+
                 <br>
-<!--                <div class="row">-->
-                 <button id="7" value="7" class="number" type="button" onclick="calculate(7)">7</button>
-                 <button id="8" value="8" class="number" type="button" onclick="calculate(8)">8</button>
-                 <button id="9" value="9" class="number" type="button" onclick="calculate(9)">9</button>
+
+                 <button id="7" value="7" class="number" type="button" onclick="addNumber(7)">7</button>
+                 <button id="8" value="8" class="number" type="button" onclick="addNumber(8)">8</button>
+                 <button id="9" value="9" class="number" type="button" onclick="addNumber(9)">9</button>
                  <button id="multiply" value="*" class="operator-btn" id="times" onclick="calculate('*')">*</button>
-<!--                </div>-->
+
                 <br>
-<!--                <div class="row">-->
+
                     <button type="button">C</button>
-                    <button id="0" value="0" type="button" onclick="calculate(0)">0</button>
+                    <button id="0" value="0" type="button" onclick="addNumber(0)">0</button>
                     <button type="button">=</button>
                     <button class="operator-btn" id="slash" type="button">/</button>
-<!--                </div>-->
+
             </div>
         </div>
     </main>
