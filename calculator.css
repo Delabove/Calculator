@@ -5,16 +5,17 @@
 
 }
 
-.calculator {
+#calcForm {
 
     text-align: center;
-    float: top;
-    vertical-align: middle;
+    vertical-align: center;
     border: solid 2px black;
-    width: 330px;
-    height: 200px;
+    margin: 75px;
+    width: 473px;
+    height: 526px;
     padding-top: 71px;
     padding-bottom: 162px;
+    box-shadow:  -3px -4px 30px 3px #383636;
 }
 
 .window{
@@ -43,10 +44,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.keys {
-    width: 600px;
-}
-
 .wrap {
     background:  #f7f7f7;
     margin-top: 50px;
@@ -58,7 +55,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 .block {
-    width: 125px;
+    width: 170px;
     height: 125px;
 }
 
@@ -67,7 +64,16 @@ body {
     justify-content: space-between;
 }
 
-
+.style-1{
+    background-image: linear-gradient(to right,
+    #e89d93,
+    #e89d93 4px,
+    #dbdbdd 4px,
+    #f7f7f7
+    );
+    background-size: 8px 100%;
+    width: 500px;
+}
 .style-2 {
 
     width: 0;
@@ -81,6 +87,7 @@ body {
 }
 .style-3 {
     background-image: linear-gradient(135deg, #e89d93 50%, #dbdbdd 50%);
+    width: 500px;
 }
 .style-4 {
     background-image: linear-gradient(
@@ -116,12 +123,16 @@ body {
 }
 .style-8 {
     background-image: linear-gradient(315deg, #eec71a 50%, #f7f7f7 50%);
+    height: 550px;
 }
 .style-9 {
     background-image: linear-gradient(225deg, #e89d93 50%, #f7f7f7 50%);
+    width: 169px;
+    height: 553px;
 }
 .style-10 {
     background: #dbdbdd;
+    height: 540px;
 }
 .style-11 {
     background-image: linear-gradient(45deg, #e89d93 50%, #f7f7f7 50%);
