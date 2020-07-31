@@ -11,39 +11,36 @@
     <main class="container">
         <div class="calculator">
             <div id="display-screen">
-                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="left-display" style="width: 260px; height: 50px; text-align: right">
-<!--                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="mid-display" style="width: 60px; height: 50px">-->
-<!--                <input type="text" name="display" value="0" placeholder="0" disabled="true" id="right-display" style="width: 100px; height: 50px">-->
+                <input class="window" type="text" name="display" value="0" placeholder="0" disabled="true" id="display" style="width: 260px; height: 50px; text-align: right">
+
             </div>
-
             <div class="keys">
-
-                 <button id="1" value="1" class="number" type="button" onclick="document.calc.textview.value +=">1</button>
-                 <button id="2" value="2" class="number" type="button" onclick="displayNumber(2)">2</button>
-                 <button id="3" value="3" class="number" type="button" onclick="displayNumber(3)">3</button>
-                 <button id="add" value="+" class="operator-btn" onclick="displayNumber('+')">+</button>
-
-                <br>
-
-                    <button id="4" value="4" class="number" type="button" onclick="displayNumber(4)">4</button>
-                    <button id="5" value="5" class="number" type="button" onclick="displayNumber(5)">5</button>
-                    <button id="6" value="6" class="number" type="button" onclick="displayNumber(6)">6</button>
-                    <button id="subtract" value="-" class="operator-btn" id="minus" onclick="displayNumber('-')">-</button>
+                <input  class="number" type="button" value="0" onclick="">
+                <input  class="number" type="button" value="1" onclick="">
+                <input  class="number" type="button" value="2" onclick="">
+                <input type="button" class="operator-btn" value="+" onclick="">
 
                 <br>
 
-                 <button id="7" value="7" class="number" type="button" onclick="displayNumber(7)">7</button>
-                 <button id="8" value="8" class="number" type="button" onclick="displayNumber(8)">8</button>
-                 <button id="9" value="9" class="number" type="button" onclick="displayNumber(9)">9</button>
-                 <button id="multiply" value="*" class="operator-btn" id="times" onclick="displayNumber('*')">*</button>
+                <input class="btn" type="button" value="3" onclick="">
+                <input class="btn" type="button" value="4" onclick="">
+                <input class="btn" type="button" value="5" onclick="">
+                <input type="button" id="subtract" value="-" class="btn" id="minus" value="-" onclick="">
 
                 <br>
 
-                    <button type="button">C</button>
-                    <button id="0" value="0" type="button" onclick="displayNumber(0)">0</button>
-                    <button type="button">=</button>
-                    <button class="operator-btn" id="slash" type="button">/</button>
+                <input class="btn" type="button" value="6" onclick="">
+                <input class="btn" type="button" value="7" onclick="">
+                <input class="btn" type="button" value="8" onclick="">
+                <input type="button" id="multiply" class="btn" id="times" value="x" onclick="">
 
+                <br>
+
+                <input class="button" type="button" value="9">
+                <input class="button" type="button" value="C" onclick="">
+                <input class="button" type="button" value="=">
+                <input class="button" type="button" id="slash"  value="%">
+                <!--class=button -->
             </div>
         </div>
     </main>

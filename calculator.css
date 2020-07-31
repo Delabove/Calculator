@@ -17,12 +17,12 @@
     padding-bottom: 162px;
 }
 
-input{
+.window{
     height: 30px;
     margin-bottom: 20px;
 }
 
-button {
+.btn {
     width: 55px;
     height: 30px;
     margin: 10px;
