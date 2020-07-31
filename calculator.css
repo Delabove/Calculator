@@ -64,6 +64,20 @@ body {
     justify-content: space-between;
 }
 
+
+.block-title{
+    background:
+            linear-gradient(45deg, #dbdbdd 50%, transparent 50%),
+            radial-gradient(#454547 4px, transparent 4px),
+            radial-gradient(#454547 4px, transparent 4px),
+            transparent;
+    background-size: 100%, 24px 24px, 24px 24px, 100%;
+    background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+    width: 50px;
+
+}
+
+
 .style-1{
     background-image: linear-gradient(to right,
     #e89d93,
@@ -72,7 +86,7 @@ body {
     #f7f7f7
     );
     background-size: 8px 100%;
-    width: 500px;
+    width: 629px;
 }
 .style-2 {
 
@@ -87,7 +101,7 @@ body {
 }
 .style-3 {
     background-image: linear-gradient(135deg, #e89d93 50%, #dbdbdd 50%);
-    width: 500px;
+    width: 623px;
 }
 .style-4 {
     background-image: linear-gradient(
@@ -120,10 +134,11 @@ body {
             transparent;
     background-size: 100%, 24px 24px, 24px 24px, 100%;
     background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+    width: 574px;
 }
 .style-8 {
     background-image: linear-gradient(315deg, #eec71a 50%, #f7f7f7 50%);
-    height: 550px;
+    height: 676px;
 }
 .style-9 {
     background-image: linear-gradient(225deg, #e89d93 50%, #f7f7f7 50%);
