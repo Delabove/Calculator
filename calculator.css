@@ -8,7 +8,7 @@
 .calculator {
 
     text-align: center;
-    display: inline-block;
+    float: top;
     vertical-align: middle;
     border: solid 2px black;
     width: 330px;
@@ -30,3 +30,111 @@
     font-weight: bold;
 }
 
+
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: powderblue;
+    color: #454547;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.keys {
+    width: 600px;
+}
+
+.wrap {
+    background:  #f7f7f7;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 950px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.block {
+    width: 125px;
+    height: 125px;
+}
+
+> div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.style-2 {
+
+    width: 0;
+    height: 0;
+    border: 62px solid #f7f7f7;
+    border-top-color: #aeafb3;
+    border-bottom-color: #454547;
+/*//to account for a pixel-rounding annoyance:*/
+    background: #454547;
+    padding-top: 1px;
+}
+.style-3 {
+    background-image: linear-gradient(135deg, #e89d93 50%, #dbdbdd 50%);
+}
+.style-4 {
+    background-image: linear-gradient(
+    #f7f7f7,
+    #f7f7f7 7px,
+    #454547 7px,
+    #454547
+    );
+    background-size: 100% 14px;
+}
+.style-5 {
+    background-image: linear-gradient(45deg, #eec71a 50%, #f7f7f7 50%);
+}
+.style-6 {
+    background-image:
+            linear-gradient(135deg, #454547 50%, transparent 50%),
+            linear-gradient(
+            #f7f7f7,
+            #f7f7f7 7px,
+            #454547 7px,
+            #454547
+            );
+    background-size: 100%, 100% 14px;
+}
+.style-7 {
+    background:
+            linear-gradient(45deg, #dbdbdd 50%, transparent 50%),
+            radial-gradient(#454547 4px, transparent 4px),
+            radial-gradient(#454547 4px, transparent 4px),
+            transparent;
+    background-size: 100%, 24px 24px, 24px 24px, 100%;
+    background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+}
+.style-8 {
+    background-image: linear-gradient(315deg, #eec71a 50%, #f7f7f7 50%);
+}
+.style-9 {
+    background-image: linear-gradient(225deg, #e89d93 50%, #f7f7f7 50%);
+}
+.style-10 {
+    background: #dbdbdd;
+}
+.style-11 {
+    background-image: linear-gradient(45deg, #e89d93 50%, #f7f7f7 50%);
+}
+.style-12 {
+    background-image: linear-gradient(225deg, #eec71a 50%, #f7f7f7 50%);
+}
+.block-13 {
+    background-image: linear-gradient(to right,
+    #e89d93,
+    #e89d93 4px,
+    #dbdbdd 4px,
+    #f7f7f7
+    );
+    background-size: 8px 100%;
+}
