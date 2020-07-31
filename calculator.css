@@ -16,6 +16,15 @@
     padding-top: 71px;
     padding-bottom: 162px;
     box-shadow:  -3px -4px 30px 3px #383636;
+    background-image:
+            linear-gradient(135deg, #454547 50%, transparent 50%),
+            linear-gradient(
+                    #f7f7f7,
+                    #f7f7f7 7px,
+                    #454547 7px,
+                    #454547
+            );
+    background-size: 100%, 100% 14px;
 }
 
 .window{
@@ -23,6 +32,7 @@
     width: 292px;
     height: 50px;
     text-align: right;
+    background-color: white;
 }
 
 .btn {
@@ -168,6 +178,11 @@ body {
     background-size: 8px 100%;
 }
 
-#slash, #multiply, #minus, #additon, #clear{
+#slash, #multiply, #minus, #addition, #clear, #subtract, #equal{
     border-radius: 50%;
 }
+
+#slash, #multiply, #minus, #addition, #subtract, #equal, #clear{
+    background-color: #e89d93;
+}
+
